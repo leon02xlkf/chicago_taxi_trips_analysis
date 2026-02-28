@@ -1,0 +1,32 @@
+[2026-02-28T01:34:16.849+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: redshift_smoke_test.test_redshift_connection manual__2026-02-28T01:34:16.208617+00:00 [queued]>
+[2026-02-28T01:34:16.853+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: redshift_smoke_test.test_redshift_connection manual__2026-02-28T01:34:16.208617+00:00 [queued]>
+[2026-02-28T01:34:16.853+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2026-02-28T01:34:16.859+0000] {taskinstance.py:2217} INFO - Executing <Task(PostgresOperator): test_redshift_connection> on 2026-02-28 01:34:16.208617+00:00
+[2026-02-28T01:34:16.861+0000] {standard_task_runner.py:60} INFO - Started process 361 to run task
+[2026-02-28T01:34:16.863+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'redshift_smoke_test', 'test_redshift_connection', 'manual__2026-02-28T01:34:16.208617+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/redshift_smoke_test.py', '--cfg-path', '/tmp/tmpdjg5uxny']
+[2026-02-28T01:34:16.865+0000] {standard_task_runner.py:88} INFO - Job 4: Subtask test_redshift_connection
+[2026-02-28T01:34:16.896+0000] {task_command.py:423} INFO - Running <TaskInstance: redshift_smoke_test.test_redshift_connection manual__2026-02-28T01:34:16.208617+00:00 [running]> on host 24b49123780c
+[2026-02-28T01:34:16.950+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='redshift_smoke_test' AIRFLOW_CTX_TASK_ID='test_redshift_connection' AIRFLOW_CTX_EXECUTION_DATE='2026-02-28T01:34:16.208617+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-28T01:34:16.208617+00:00'
+[2026-02-28T01:34:16.951+0000] {sql.py:276} INFO - Executing: SELECT current_user, current_database, current_timestamp;
+[2026-02-28T01:34:16.957+0000] {base.py:83} INFO - Using connection ID 'redshift_default' for task execution.
+[2026-02-28T01:34:16.967+0000] {base.py:83} INFO - Using connection ID 'redshift_default' for task execution.
+[2026-02-28T01:34:17.348+0000] {sql.py:457} INFO - Running statement: SELECT current_user, current_database, current_timestamp;, parameters: None
+[2026-02-28T01:34:28.991+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/operators/sql.py", line 282, in execute
+    output = hook.run(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 404, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 462, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.UndefinedColumn: column "current_database" does not exist
+
+[2026-02-28T01:34:29.005+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=redshift_smoke_test, task_id=test_redshift_connection, execution_date=20260228T013416, start_date=20260228T013416, end_date=20260228T013429
+[2026-02-28T01:34:29.019+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 4 for task test_redshift_connection (column "current_database" does not exist
+; 361)
+[2026-02-28T01:34:29.029+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-02-28T01:34:29.042+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
