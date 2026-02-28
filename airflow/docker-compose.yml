@@ -7,7 +7,6 @@ x-airflow-common: &airflow-common
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
     AIRFLOW__CORE__LOAD_EXAMPLES: "false"
     AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth"
-    # 让 boto3 能读到挂载的凭证
     AWS_SHARED_CREDENTIALS_FILE: /home/airflow/.aws/credentials
     AWS_CONFIG_FILE: /home/airflow/.aws/config
   volumes:
