@@ -653,3 +653,24 @@
 [2026-02-28T02:10:28.768+0000] {logging_mixin.py:188} INFO - [2026-02-28T02:10:28.768+0000] {dag.py:3047} INFO - Sync 1 DAGs
 [2026-02-28T02:10:28.774+0000] {logging_mixin.py:188} INFO - [2026-02-28T02:10:28.774+0000] {dag.py:3834} INFO - Setting next_dagrun for redshift_smoke_test to None, run_after=None
 [2026-02-28T02:10:28.781+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/redshift_smoke_test.py took 0.042 seconds
+[2026-02-28T02:10:59.018+0000] {processor.py:161} INFO - Started process (PID=722) to work on /opt/airflow/dags/redshift_smoke_test.py
+[2026-02-28T02:10:59.019+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/redshift_smoke_test.py for tasks to queue
+[2026-02-28T02:10:59.020+0000] {logging_mixin.py:188} INFO - [2026-02-28T02:10:59.020+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/redshift_smoke_test.py
+[2026-02-28T02:10:59.027+0000] {processor.py:840} INFO - DAG(s) 'redshift_smoke_test' retrieved from /opt/airflow/dags/redshift_smoke_test.py
+[2026-02-28T02:10:59.047+0000] {logging_mixin.py:188} INFO - [2026-02-28T02:10:59.047+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-02-28T02:10:59.055+0000] {logging_mixin.py:188} INFO - [2026-02-28T02:10:59.054+0000] {dag.py:3834} INFO - Setting next_dagrun for redshift_smoke_test to None, run_after=None
+[2026-02-28T02:10:59.063+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/redshift_smoke_test.py took 0.047 seconds
+[2026-02-28T02:11:29.325+0000] {processor.py:161} INFO - Started process (PID=727) to work on /opt/airflow/dags/redshift_smoke_test.py
+[2026-02-28T02:11:29.326+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/redshift_smoke_test.py for tasks to queue
+[2026-02-28T02:11:29.327+0000] {logging_mixin.py:188} INFO - [2026-02-28T02:11:29.327+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/redshift_smoke_test.py
+[2026-02-28T02:11:29.336+0000] {processor.py:840} INFO - DAG(s) 'redshift_smoke_test' retrieved from /opt/airflow/dags/redshift_smoke_test.py
+[2026-02-28T02:11:29.359+0000] {logging_mixin.py:188} INFO - [2026-02-28T02:11:29.358+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-02-28T02:11:29.364+0000] {logging_mixin.py:188} INFO - [2026-02-28T02:11:29.364+0000] {dag.py:3834} INFO - Setting next_dagrun for redshift_smoke_test to None, run_after=None
+[2026-02-28T02:11:29.373+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/redshift_smoke_test.py took 0.051 seconds
+[2026-02-28T02:11:59.615+0000] {processor.py:161} INFO - Started process (PID=732) to work on /opt/airflow/dags/redshift_smoke_test.py
+[2026-02-28T02:11:59.616+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/redshift_smoke_test.py for tasks to queue
+[2026-02-28T02:11:59.617+0000] {logging_mixin.py:188} INFO - [2026-02-28T02:11:59.616+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/redshift_smoke_test.py
+[2026-02-28T02:11:59.626+0000] {processor.py:840} INFO - DAG(s) 'redshift_smoke_test' retrieved from /opt/airflow/dags/redshift_smoke_test.py
+[2026-02-28T02:11:59.647+0000] {logging_mixin.py:188} INFO - [2026-02-28T02:11:59.646+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-02-28T02:11:59.653+0000] {logging_mixin.py:188} INFO - [2026-02-28T02:11:59.653+0000] {dag.py:3834} INFO - Setting next_dagrun for redshift_smoke_test to None, run_after=None
+[2026-02-28T02:11:59.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/redshift_smoke_test.py took 0.050 seconds
