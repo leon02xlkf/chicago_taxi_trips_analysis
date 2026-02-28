@@ -9,6 +9,7 @@ x-airflow-common: &airflow-common
     AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth"
     AWS_SHARED_CREDENTIALS_FILE: /home/airflow/.aws/credentials
     AWS_CONFIG_FILE: /home/airflow/.aws/config
+    _PIP_ADDITIONAL_REQUIREMENTS: apache-airflow-providers-amazon apache-airflow-providers-postgres apache-airflow-providers-common-sql
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
