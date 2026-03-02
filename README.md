@@ -1,4 +1,4 @@
-# chicago_taxi_trips_analysis
+# Chicago Taxi Trips Pipeline
 A pipeline based on AWS framework, Airflow, and Tableau using Chicago Taxi Trips data from June to December 2025.
 
 ## Dashboard
@@ -19,3 +19,13 @@ The analytics layer of the project is built in Tableau. The dashboard provides i
 
 ## Infrastructure
 ![Project Architecture Diagram](images/aws_pipeline_flow.png)
+
+### Source
+
+### IAM Setup
+
+### Spark/AWS Glue
+
+### Amazon Redshift
+
+## Tableau
