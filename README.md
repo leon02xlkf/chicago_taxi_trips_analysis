@@ -28,4 +28,4 @@ The analytics layer of the project is built in Tableau. The dashboard provides i
 
 ### Amazon Redshift
 
-## Tableau
+### Tableau
